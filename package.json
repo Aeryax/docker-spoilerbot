@@ -1,0 +1,14 @@
+{
+  "name": "aeryax-spoiler-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aeryax",
+  "license": "ISC",
+  "dependencies": {
+    "discord-spoiler-bot": "2.0.2"
+  }
+}
