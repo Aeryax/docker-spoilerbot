@@ -20,5 +20,8 @@ ADD index.js /usr/src/app/index.js
 # Get npm dependencies
 RUN npm install
 
+# Hotfix line break
+ADD GifGenerator.js /usr/src/app/node_modules/discord-spoiler-bot/src/GifGenerator.js
+
 # Run application
 CMD ["npm", "start"]
