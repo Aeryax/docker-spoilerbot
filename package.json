@@ -9,6 +9,7 @@
   "author": "Aeryax",
   "license": "ISC",
   "dependencies": {
-    "discord-spoiler-bot": "2.0.3"
+    "discord-spoiler-bot": "2.0.3",
+    "yn": "1.2.0"
   }
 }

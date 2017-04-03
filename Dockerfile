@@ -2,8 +2,13 @@ FROM node:latest
 MAINTAINER Gabriel Sentucq <perso@kazhord.fr>
 
 # Environments
-ENV TOKEN       your_secret_token
-ENV MAX_LINES   6
+ENV TOKEN                   your_secret_token
+ENV MAX_LINES               6
+ENV MARK_ALLOW_ALL          FALSE
+ENV MARK_ROLE_IDS           undefined
+ENV MARK_USER_IDS           undefined
+ENV INCLUDE_CHANNEL_IDS     undefined
+ENV EXCLUDE_CHANNEL_IDS     undefined
 
 # Install dependencies
 RUN apt-get update && \
