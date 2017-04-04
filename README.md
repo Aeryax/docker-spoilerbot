@@ -26,4 +26,8 @@ $ docker run -d --name spoilerbot -e TOKEN="your-secret-token-here" aeryax/spoil
 
 ## Docker Compose
 
-**TODO**
+```sh
+$ curl -L https://raw.githubusercontent.com/Aeryax/docker-spoilerbot/master/docker-compose.yml -o ./docker-compose.yml
+$ nano ./docker-compose.yml # Edit TOKEN environment variable. Look above if extra config needed
+$ docker-compose -f ./docker-compose.yml up -d
+```

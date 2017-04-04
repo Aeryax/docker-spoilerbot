@@ -1,0 +1,7 @@
+version: '2'
+services:
+  spoilerbot:
+    image: aeryax/spoilerbot
+    container_name: spoilerbot
+    environment:
+      - TOKEN=your-secret-token-here
