@@ -24,6 +24,17 @@ $ docker run -d --name spoilerbot -e TOKEN="your-secret-token-here" aeryax/spoil
 * `-e INCLUDE_CHANNEL_IDS="id1 id2 id3"` - a list, where each string represents an ID of a channel. When this property is set, bot will only listen to the specified channels. Cannot be used together with exclude (default: none)
 * `-e EXCLUDE_CHANNEL_IDS="id1 id2 id3"` - a list, where each string represents an ID of a channel. When this property is set, bot will listen to all channels but the one specified in this array. Cannot be used together with include (default: none)
 
+* `-e GIF_MARGIN="10"` - margin (in pixels) between the text and the borders of the GIF (default: 10)
+* `-e GIF_WIDTH="400"` - width of the GIF in pixels (default: 400)
+* `-e GIF_LINE_HEIGHT="40"` - height of a line of text on the GIF (default: 40)
+* `-e GIF_PLACEHOLDER="your text here"` - text displayed on the first frame of the GIF (default: "Hover to reveal spoiler")
+* `-e GIF_FONTSIZE="13px"` - font size (default: "13px")
+* `-e GIF_COLOUR_BG="#3c3f44"` - colour of the GIF background (default: "#3c3f44")
+* `-e GIF_COLOUR_STROKE="#b2ac94"` - colour of GIF borders (default: "#b2ac94")
+* `-e GIF_COLOUR_TEXT="#c0ba9e"` - colour of the spoiler text (default: "#c0ba9e")
+* `-e GIF_COLOUR_PLACEHOLDER="#8c8775"` - colour of the placeholder text seen above (default: "#8c8775")
+
+
 ## Docker Compose
 
 ```sh
